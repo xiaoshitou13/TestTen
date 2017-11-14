@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/Hometou"
+        android:background="#3c3c"
+       >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/Homelefticon"
+            android:src="@mipmap/ic_normal_code"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/HomeEd"
+            android:layout_width="300dp"
+            android:hint="请输入您要搜索的商品"
+            android:textColorHint="#5656"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/Homelefticon" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/Homerighticon"
+            android:src="@mipmap/ic_normal_message"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/Hometou"
+       android:id="@+id/Homeswipe"
+       >
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/Homerecy"></android.support.v7.widget.RecyclerView>
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

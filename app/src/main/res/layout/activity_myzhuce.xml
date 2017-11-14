@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="byc.by.com.testten.wode.view.Myzhuce">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:id="@+id/iphones"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imimas"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/iphones"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/zhuces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="注册"
+        android:layout_below="@+id/imimas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp" />
+</RelativeLayout>

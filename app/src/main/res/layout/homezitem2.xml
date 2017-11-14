@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left"
+        android:layout_marginLeft="25dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Homezimages"
+            android:src="@mipmap/ic_launcher"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Homeztexts" />
+
+        <TextView
+            android:maxEms="5"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈"
+            android:id="@+id/Homeztexts"
+            android:textSize="14sp"
+            android:layout_below="@+id/Homezimages"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp" />
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/right"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentStart="true">
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:id="@+id/iamge2"
+           android:layout_marginRight="55dp"
+           android:src="@mipmap/ic_launcher"
+           android:layout_alignParentRight="true"
+
+           />
+       <TextView
+           android:maxEms="5"
+           android:singleLine="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="哈哈"
+           android:id="@+id/Hometext2"
+           android:layout_below="@id/iamge2"
+           android:textSize="14sp"
+           android:layout_marginRight="35dp"
+           android:layout_alignEnd="@+id/iamge2" />
+
+   </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="byc.by.com.testten.wode.view.MyLogin">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:id="@+id/iphone"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imima"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/iphone"
+        android:layout_alignStart="@+id/iphone"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="27dp"
+        android:text="登录"
+        android:layout_below="@+id/imima"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/zhuche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_alignBaseline="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="82dp" />
+</RelativeLayout>
